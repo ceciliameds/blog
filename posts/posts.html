@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/posts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Barbie Programadora - Conheça a Barbie Programadora</title>
+    <meta name="description" content="Um blog sobre mim.">
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FFF2E7">
+    <script src="posts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="main-content">
+            <div class="header-main">
+                <a href="javascript:;">
+                    <h3 class="header-main-logo">Cecília</h3>   
+                </a>
+                <nav>
+                    <div class="header-main-menu">
+                        <span class="header-main-menu-line"></span>
+                        <span class="header-main-menu-line"></span>
+                        <span class="header-main-menu-line"></span>
+                    </div>
+
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="../index.html" class="menu-item-link" data-section="sobre">Sobre</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./posts/posts.html" class="menu-item-link">Posts</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#informacoes" class="menu-item-link" data-section="informacoes">Informações</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="desc" id="posts">
+            <!-- POSTS EXISTENTES -->
+            <div class="container">
+                <div class="post-card-container" id="items">
+                    <div class="post-card">
+                        <img src="posts-img/include-question.png" alt="Imagem do Post">
+                        <h3>Por que devo entrar na Include?</h3>
+                        <button class="card__button" data-target="card-container1">Ler mais</button>
+                    </div>
+                    
+                    <div class="post-card">
+                        <img src="posts-img/app-ingles.png" alt="Imagem do Post">
+                        <h3>Landing Page - Aulas de Inglês</h3>
+                  
+                        <button class="card__button" data-target="card-container2">Ler mais</button>
+                    </div>
+                    
+                    <div class="post-card">
+                        <img src="posts-img/app-fincancas.png" alt="Imagem do Post">
+                        <h3>App de Gestão Financeira</h3>
+                        <p></p>
+                        <button class="card__button" data-target="card-container3">Ler mais</button>
+                    </div>
+
+                    <div class="post-card">
+                        <img src="posts-img/filme-barbie.png" alt="Imagem do Post">
+                        <h3>Filme da Barbie</h3>
+                        <button class="card__button" data-target="card-container4">Ler mais</button>
+                    </div>
+
+                    
+                                    
+                    <div class="post-card" id="novo-post-card" style="display: none;">
+                        <img src="" alt="Imagem do Post" id="novo-post-imagem">
+                        <h3 id="novo-post-titulo"></h3>
+                        <p id="novo-post-subtitulo"></p>
+                        <button class="card__button" data-target="card-container">Ler mais</button>
+                    </div>
+                    
+                </div>     
+            </div>
+            <!--POPUP DOS POSTS (para ler mais)  -->
+            <div class="card__container" id="card-container1">
+                <div class="card__content">
+                    <!-- <div class="card__close close-card" title="Close">aaaaaaaaaaaa</div> -->
+                    <img src="posts-img/include-question.png" alt="Imagem do Post" class="card__img">
+
+                    <h1 class="card__title">Por que devo entrar na Include?</h1>
+                    <p class="card__description">Entrar na Include, empresa júnior de programação da UFRN, 
+                        seria uma ótima escolha para mim, pois estou em busca de experiência e aprendizado.
+                        Viver a experiência de participar de uma empresa júnior como a Include oferece aprendizado prático,
+                        networking, mentoria, oportunidades de impacto social, desenvolvimento de habilidades, crescimento pessoal e 
+                        um valioso portfólio para futuras oportunidades de emprego. Acredito que a Include é o ambiente ideal para meu
+                        desenvolvimento profissional na programação. Além disso, espero contribuir com minhas habilidades ao mesmo tempo 
+                        que as aprimoro, agregando valor aos projetos da empresa.</p>
+
+                    <button class="card__button-link close-card">
+                        Close
+                    </button>
+                </div>
+            </div>
+    
+            <div class="card__container" id="card-container2">
+                <div class="card__content">
+                    <div class="card__close close-card" title="Close"></div>
+                    <img src="posts-img/app-ingles.png" alt="Imagem do Post App Inglês" class="card__img">
+
+                    <h1 class="card__title">Landing Page - Aulas de Inglês</h1>
+                    <p class="card__description">O projeto é uma landing page estática 
+                        de um site de aulas de inglês, criada usando HTML e CSS. 
+                        A página destaca os benefícios, cursos oferecidos e os planos,
+                        e inclui um formulário para contato. O design é atraente e responsivo, 
+                        com o objetivo de atrair e informar os visitantes de maneira profissional.
+                        Vale destacar que a página não possui recursos interativos.</p>
+
+                    <button class="card__button-link close-card">
+                        Close
+                    </button>
+                </div>
+            </div>
+            <div class="card__container" id="card-container3">
+                <div class="card__content">
+                    <div class="card__close close-card" title="Close"></div>
+                    <img src="posts-img/app-fincancas.png" alt="Imagem do Post" class="card__img">
+
+                    <h1 class="card__title">App de Gestão Financeira</h1>
+                    <p class="card__description">Um aplicativo de Gestão Financeira construído com React, CSS e HTML 
+                        que oferece uma solução poderosa para quem deseja manter suas finanças pessoais ou empresariais
+                        em ordem. Este CRUD permite que os usuários registrem suas entradas e saídas de dinheiro de forma
+                        simples e eficaz. Para rodar o app, baixe o repositório e na pasta, abra o terminal e use o comando npm start.</p>
+
+                    <button class="card__button-link close-card">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+            <div class="card__container" id="card-container4">
+                <div class="card__content">
+                    <div class="card__close close-card" title="Close"></div>
+                    <img src="posts-img/filme-barbie.png" alt="Imagem do Post Barbie" class="card__img">
+
+                    <h1 class="card__title">Filme da Barbie</h1>
+                    <p class="card__description">O novo filme da Barbie é uma obra que empodera mulheres e explora temas como a
+                        relação entre mãe-filha e o patriarcado. Ele destaca a força das personagens femininas, inspirando confiança e coragem.
+                        Além disso, apresenta uma visão utópica de um mundo perfeito sem machismo, contrastando com a realidade 
+                        cheia de discriminação, incentivando a reflexão sobre a equidade de gênero. É um filme que oferece uma experiência
+                        inspiradora e nostálgica até porquê quem nunca brincou com uma Barbie ou viu um dos filmes animados
+                        quando criança, não é mesmo?</p>
+
+                    <button class="card__button-link close-card">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </section>
+           
+        <!-- FALTA ALINHAR -->
+        <section class="desc hero" id="posts">
+            <div class="container">
+                <div class="desc-content">
+                    <div class="desc-text">
+                        <h3>Faça um novo post!</h3>
+                        <p>Crie conteúdo e atualize seus leitores.</p>
+                    </div>
+                    <div class="desc-form">
+                        <form id="blogForm">
+                            <label for="titulo" class="titulos">Título da Postagem:</label>
+                            <input type="text" id="titulo" required><br><br>
+                                                        
+                            <label for="postagem" class="titulos">Escreva sua Postagem:</label><br>
+                            <textarea id="postagem" rows="5" required></textarea><br><br>
+                                                        
+                            <button>Adicionar Postagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <ul id="listaPostagens"></ul> -->
+
+        <section class="desc infos" id="posts">
+            <div id="informacoes" class="footer-top">
+                <div class="container">
+                    <div>
+                        <div>
+                            <h3 style="color:#fff2e7;">Cecíia</h3>   
+                            <p  style="color: #fff2e7;">
+                                Celular:</b> 
+                                +55 84 99865-6518<br/><b>
+                                E-mail:</b>
+                                ceciliamedeirs@gmail.com
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h2>Links Rápidos</h2>
+                            <p>
+                                <a href="index.html" class="menu-item-link">Início</a><b>
+                                <a href="./posts/posts.html" class="menu-item-link">Posts</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="informacoes">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copy" style="color: #fff2e7;">
+                    &copy; Copyright <strong><span>Cecília</span></strong>. Todos os direitos reservados
+                </div>
+                <div class="footer-socials"></div>           
+            </div>
+        </div>
+    </footer>
+
+    <!-- Card Default -->
+    <div class="post-card d-none" id="post-default">
+        <img src="posts-img/novo-post.png" alt="Imagem do Post">
+        <h3>Título</h3>
+
+        <div id="dialog-content" style="display:none;max-width:500px;">
+            <h2>Título</h2>
+            <p>Texto</p>
+        </div>
+        <button id="card__button"  class="card__button">Ler mais</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+        // Custom options for all galleries
+      });    
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
