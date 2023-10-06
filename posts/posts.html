@@ -50,32 +50,53 @@
             <!-- POSTS EXISTENTES -->
             <div class="container">
                 <div class="post-card-container" id="items">
-                    <div class="post-card">
+
+                    <div class="post-card" id="post1" data-titulo="Por que devo entrar na Include?" data-conteudo="Entrar na Include, empresa júnior de programação da UFRN,
+                     seria uma ótima escolha para mim, pois estou em busca de experiência e aprendizado. Viver a experiência de participar
+                      de uma empresa júnior como a Include oferece aprendizado prático, networking, mentoria, oportunidades de impacto social, 
+                      desenvolvimento de habilidades, crescimento pessoal e um valioso portfólio para futuras oportunidades de emprego. Acredito que a
+                       Include é o ambiente ideal para meu desenvolvimento profissional na programação. Além disso, espero contribuir com minhas habilidades
+                        ao mesmo tempo que as aprimoro, agregando valor aos projetos da empresa.">
                         <img src="posts-img/include-question.png" alt="Imagem do Post">
                         <h3>Por que devo entrar na Include?</h3>
-                        <button class="card__button" data-target="card-container1">Ler mais</button>
+                        <button data-fancybox="static-cards" data-src="#dialog-content" class="card__button">Ler mais</button>
                     </div>
                     
-                    <div class="post-card">
+
+                    
+                    <div class="post-card" id="post2" data-titulo="Landing Page - Aulas de Inglês" data-conteudo="O projeto é uma landing page estática de um site 
+                    de aulas de inglês, criada usando HTML e CSS. A página destaca os benefícios,
+                     cursos oferecidos e os planos, e inclui um formulário para contato. O design
+                      é atraente e responsivo, com o objetivo de atrair e informar os visitantes de maneira profissional.
+                       Vale destacar que a página não possui recursos interativos.">
                         <img src="posts-img/app-ingles.png" alt="Imagem do Post">
                         <h3>Landing Page - Aulas de Inglês</h3>
                   
-                        <button class="card__button" data-target="card-container2">Ler mais</button>
+                        <button data-fancybox="static-cards" data-src="#dialog-content" class="card__button">Ler mais</button>
                     </div>
                     
-                    <div class="post-card">
+                    <div class="post-card" id="post3" data-titulo="App de Gestão Financeira" data-conteudo="Um aplicativo de Gestão Financeira construído com React, CSS e HTML 
+                    que oferece uma solução poderosa para quem deseja manter suas finanças pessoais ou empresariais
+                    em ordem. Este CRUD permite que os usuários registrem suas entradas e saídas de dinheiro de forma
+                    simples e eficaz. Para rodar o app, baixe o repositório e na pasta, abra o terminal e use o comando npm start.">
                         <img src="posts-img/app-fincancas.png" alt="Imagem do Post">
                         <h3>App de Gestão Financeira</h3>
                         <p></p>
-                        <button class="card__button" data-target="card-container3">Ler mais</button>
+                        <button data-fancybox="static-cards" data-src="#dialog-content" class="card__button">Ler mais</button>
                     </div>
 
-                    <div class="post-card">
+                    <div class="post-card" id="post4" data-titulo="Filme da Barbie" data-conteudo="O novo filme da Barbie é uma obra que empodera mulheres e explora temas como a
+                    relação entre mãe-filha e o patriarcado. Ele destaca a força das personagens femininas, inspirando confiança e coragem.
+                    Além disso, apresenta uma visão utópica de um mundo perfeito sem machismo, contrastando com a realidade 
+                    cheia de discriminação, incentivando a reflexão sobre a equidade de gênero. É um filme que oferece uma experiência
+                    inspiradora e nostálgica até porquê quem nunca brincou com uma Barbie ou viu um dos filmes animados
+                    quando criança, não é mesmo?">
                         <img src="posts-img/filme-barbie.png" alt="Imagem do Post">
                         <h3>Filme da Barbie</h3>
-                        <button class="card__button" data-target="card-container4">Ler mais</button>
+                        <button data-fancybox="static-cards" data-src="#dialog-content" class="card__button">Ler mais</button>
                     </div>
 
+                    
                     
                                     
                     <div class="post-card" id="novo-post-card" style="display: none;">
@@ -87,83 +108,9 @@
                     
                 </div>     
             </div>
-            <!--POPUP DOS POSTS (para ler mais)  -->
-            <div class="card__container" id="card-container1">
-                <div class="card__content">
-                    <!-- <div class="card__close close-card" title="Close">aaaaaaaaaaaa</div> -->
-                    <img src="posts-img/include-question.png" alt="Imagem do Post" class="card__img">
-
-                    <h1 class="card__title">Por que devo entrar na Include?</h1>
-                    <p class="card__description">Entrar na Include, empresa júnior de programação da UFRN, 
-                        seria uma ótima escolha para mim, pois estou em busca de experiência e aprendizado.
-                        Viver a experiência de participar de uma empresa júnior como a Include oferece aprendizado prático,
-                        networking, mentoria, oportunidades de impacto social, desenvolvimento de habilidades, crescimento pessoal e 
-                        um valioso portfólio para futuras oportunidades de emprego. Acredito que a Include é o ambiente ideal para meu
-                        desenvolvimento profissional na programação. Além disso, espero contribuir com minhas habilidades ao mesmo tempo 
-                        que as aprimoro, agregando valor aos projetos da empresa.</p>
-
-                    <button class="card__button-link close-card">
-                        Close
-                    </button>
-                </div>
-            </div>
-    
-            <div class="card__container" id="card-container2">
-                <div class="card__content">
-                    <div class="card__close close-card" title="Close"></div>
-                    <img src="posts-img/app-ingles.png" alt="Imagem do Post App Inglês" class="card__img">
-
-                    <h1 class="card__title">Landing Page - Aulas de Inglês</h1>
-                    <p class="card__description">O projeto é uma landing page estática 
-                        de um site de aulas de inglês, criada usando HTML e CSS. 
-                        A página destaca os benefícios, cursos oferecidos e os planos,
-                        e inclui um formulário para contato. O design é atraente e responsivo, 
-                        com o objetivo de atrair e informar os visitantes de maneira profissional.
-                        Vale destacar que a página não possui recursos interativos.</p>
-
-                    <button class="card__button-link close-card">
-                        Close
-                    </button>
-                </div>
-            </div>
-            <div class="card__container" id="card-container3">
-                <div class="card__content">
-                    <div class="card__close close-card" title="Close"></div>
-                    <img src="posts-img/app-fincancas.png" alt="Imagem do Post" class="card__img">
-
-                    <h1 class="card__title">App de Gestão Financeira</h1>
-                    <p class="card__description">Um aplicativo de Gestão Financeira construído com React, CSS e HTML 
-                        que oferece uma solução poderosa para quem deseja manter suas finanças pessoais ou empresariais
-                        em ordem. Este CRUD permite que os usuários registrem suas entradas e saídas de dinheiro de forma
-                        simples e eficaz. Para rodar o app, baixe o repositório e na pasta, abra o terminal e use o comando npm start.</p>
-
-                    <button class="card__button-link close-card">
-                        Close
-                    </button>
-                </div>
-            </div>
-
-            <div class="card__container" id="card-container4">
-                <div class="card__content">
-                    <div class="card__close close-card" title="Close"></div>
-                    <img src="posts-img/filme-barbie.png" alt="Imagem do Post Barbie" class="card__img">
-
-                    <h1 class="card__title">Filme da Barbie</h1>
-                    <p class="card__description">O novo filme da Barbie é uma obra que empodera mulheres e explora temas como a
-                        relação entre mãe-filha e o patriarcado. Ele destaca a força das personagens femininas, inspirando confiança e coragem.
-                        Além disso, apresenta uma visão utópica de um mundo perfeito sem machismo, contrastando com a realidade 
-                        cheia de discriminação, incentivando a reflexão sobre a equidade de gênero. É um filme que oferece uma experiência
-                        inspiradora e nostálgica até porquê quem nunca brincou com uma Barbie ou viu um dos filmes animados
-                        quando criança, não é mesmo?</p>
-
-                    <button class="card__button-link close-card">
-                        Close
-                    </button>
-                </div>
-            </div>
         </section>
            
-        <!-- FALTA ALINHAR -->
+     
         <section class="desc hero" id="posts">
             <div class="container">
                 <div class="desc-content">

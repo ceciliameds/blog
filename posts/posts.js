@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll('.post-card');
+
+    cards.forEach(function (card) {
+        card.addEventListener('click', function () {
+            const titulo = this.querySelector('h3').textContent;
+            const conteudo = this.dataset.conteudo;
+
+            document.getElementById('dialog-content').innerHTML = `
+                <h2>${titulo}</h2>
+                <p>${conteudo}</p>
+            `;
+
+            Fancybox.open({
+                src: '#dialog-content',
+                type: 'inline',
+            });
+        });
+    });
+
 
   const footer = document.querySelector(
     ".footer .container .footer-content .footer-socials"
@@ -43,20 +62,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = this.getElementById('blogForm');
 
   const postCard = document.getElementById("post-default");
-  
+
   // duplica o card default
+  // function duplicateCard(c) {
+  //   const newPostCard = postCard.cloneNode(true);
+  //   document.getElementById("items").appendChild(newPostCard);
+  //   const postDialog = document.getElementById("dialog-content");
+  //   const postButton = document.getElementById("card__button");
+  //   postDialog.setAttribute('id', c);
+  //   postButton.setAttribute('data-fancybox', '');
+  //   postButton.setAttribute('data-src', c);
+  //   postButton.dataset.src = "#" + c;
+  //   newPostCard.classList.add(c);
+  //   // console.log(postButton);
+  // }
   function duplicateCard(c) {
     const newPostCard = postCard.cloneNode(true);
     document.getElementById("items").appendChild(newPostCard);
     const postDialog = document.getElementById("dialog-content");
     const postButton = document.getElementById("card__button");
     postDialog.setAttribute('id', c);
-    postButton.setAttribute('data-fancybox', '');
+    postButton.setAttribute('data-fancybox', c);  // Usar um grupo diferente para os cards dinâmicos
     postButton.setAttribute('data-src', c);
     postButton.dataset.src = "#" + c;
     newPostCard.classList.add(c);
-    // console.log(postButton);
-  }
+}
+
+
 
   // altera o conteúdo do card duplicado
   function createPost() {
@@ -78,11 +110,36 @@ document.addEventListener("DOMContentLoaded", function () {
     postTextDialog.innerHTML = inputTextPost;
   }
 
+
+ 
+  document.addEventListener('click', function (event) {
+    const botaoLerMais = event.target.closest('.card__button');
+
+    if (botaoLerMais) {
+      const cardContainer = botaoLerMais.closest('.post-card');
+      const titulo = cardContainer.dataset.titulo;
+      const conteudo = cardContainer.dataset.conteudo;
+
+      const postDialog = document.getElementById('dialog-content');
+      const dialogTitulo = postDialog.querySelector('h2');
+      const dialogTexto = postDialog.querySelector('p');
+
+      // Preencher o modal com os dados do card clicado
+      dialogTitulo.textContent = titulo;
+      dialogTexto.textContent = conteudo;
+
+      Fancybox.open({
+        src: '#dialog-content',
+        type: 'inline',
+      });
+    }
+  });
+
   form.addEventListener('submit', e => {
     e.preventDefault();
     createPost();
   });
-
+  
   
 });
 
